@@ -1,12 +1,19 @@
 #include <stdio.h>
 #include "arg.h"
 #include <stdlib.h>
+
 char *argv0;
-void abort(void){
+
+void
+abort(void)
+{
 	puts("\"abort()\" function is called.");
 	exit(1);
 }
-int main(int argc, char *argv[]){
+
+int
+main(int argc, char *argv[])
+{
 	char *opt_a;
 	char *opt_b;
 	ARGBEGIN {
