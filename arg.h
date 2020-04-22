@@ -60,7 +60,7 @@ extern char *argv0;
 #define ARGEND		}\
 		}
 
-#define ARGC		(argc_) /* Current option. */
+#define ARGC()		(argc_) /* Current option. */
 
 /* Mandatory argument. */
 #define EARGF(x)\
